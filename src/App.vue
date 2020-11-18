@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Index />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Index from './pages/Index/Index.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Index
   }
 }
 </script>
@@ -19,10 +18,13 @@ export default {
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+.btn-primary{
+  background:#1378c1 !important;
+  border-color:#1378c1 !important;
+}
+.btn-primary-outline{
+  color:#1378c1 !important;
+  border-color:#1378c1 !important;
 }
 </style>
