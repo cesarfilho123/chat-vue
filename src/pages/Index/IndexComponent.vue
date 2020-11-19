@@ -28,6 +28,11 @@
         </div>
     </div>
 </template>
+<script>
+export default {
+    name: 'Index',
+}
+</script>
 <style  scoped>
     .h-row{
       height:80vh;  
