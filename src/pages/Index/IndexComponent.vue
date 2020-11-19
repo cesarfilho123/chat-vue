@@ -12,7 +12,7 @@
             alias, ut dolor.
           </p>
           <div class="container-buttons mb-4">
-            <a href="" class="btn btn-primary-outline"> Cadastre-se </a>
+            <a href="/register" class="btn btn-primary-outline"> Cadastre-se </a>
             <a href="/login" class="ml-4 btn btn-primary"> Entrar </a>
           </div>
           <center>
