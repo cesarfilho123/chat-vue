@@ -56,7 +56,6 @@ export default {
   methods:{
      save(){
       Auth.createUser(this.user).then( () => {
-        // localStorage.setItem('token',resposta.token);
         alert('Usuário cadastrado com sucesso');
         window.location.href="/login"
       });

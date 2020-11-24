@@ -9,14 +9,14 @@
                     <img src="https://via.placeholder.com/120" class="rounded-circle" alt="" />
                 </a>
             </center>
-            <form action="">
+            <form @submit.prevent="login">
                 <div class="form-group">
                     <label for="email">
                         E-mail
                     </label>
                     <input type="email" class="form-control" name="email" 
                     id="email" 
-                    placeholder="Digite seu e-mail">
+                    placeholder="Digite seu e-mail" v-model="user.email">
                 </div>
                 <div class="form-group">
                     <label for="password">
@@ -24,7 +24,7 @@
                     </label>
                     <input type="password" class="form-control" name="password" 
                     id="password" 
-                    placeholder="Digite sua senha">
+                    placeholder="Digite sua senha" v-model="user.password">
                 </div>
                 <div class="d-flex justify-content-end">
                    <button class="btn btn-primary">
@@ -38,6 +38,32 @@
     </div>
   </div>
 </template>
+<script>
+import Auth from '../../Models/Auth';
+
+export default {
+  data(){
+    return{
+      user:{
+        email:'',
+        password:''
+      }
+
+    }
+  },
+  methods:{
+    async login(){
+      const result = await Auth.login(this.user);
+      if(!result.data.token){
+        await alert('Usuário não cadastrado em nossa base de dados');
+      }else{
+        localStorage.setItem('token',result.data.token);
+        window.location.href="/chat"
+      }
+    }
+  }
+}
+</script>
 <style>
 body {
   background: #d3e7ff !important;

@@ -4,7 +4,7 @@ import { apiUrl } from "../config";
 
 export default{
     login: async (dados) => {
-        console.log(dados);
+        return apiUrl.post('/auth/authenticate',dados);
     },
     createUser:  (dados) => {
         return  apiUrl.post('/auth/register',dados);
