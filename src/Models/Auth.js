@@ -12,5 +12,13 @@ export default{
     },
     createUser:  (dados) => {
         return  apiUrl.post('/auth/register',dados);
+    },
+    verifyAuthenticated:() => {
+        let token = localStorage.getItem('token');
+        if(token){
+            return true
+        }else{
+            return false;
+        }
     }
 }
