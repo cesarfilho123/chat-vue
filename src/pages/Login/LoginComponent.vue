@@ -56,11 +56,11 @@ export default {
   methods:{
     async login(){
       const result = await Auth.login(this.user);
-      console.log(result);
       if(!result.data.token){
         alert('Usuário não cadastrado em nossa base de dados');
       }else{
         localStorage.setItem('token',result.data.token);
+        localStorage.setItem('user',result.data.user.email);
         window.location.href="/chat"
       }
     }
