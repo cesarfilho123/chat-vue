@@ -8,14 +8,17 @@
       />
       <div class="pl-3">
         <h5>
-          César Filho Lima
+          {{ userName }}
         </h5>
         <p>
-          cesarfilho078@gmail.com
+          {{ email }}
         </p>
       </div>
     </div>
     <div class="d-flex justify-content-end">
+        <a href="">
+            Iniciar conversar
+        </a>
     </div>
   </div>
 </template>
@@ -23,7 +26,7 @@
 export default {
   name: "UserItem",
   props: {
-    name: String,
+    userName: String,
     email: String,
     image: String,
   },
