@@ -1,4 +1,5 @@
 <template>
+<section class="section-center-bg">
   <div class="container-fluid">
     <div class="row justify-content-center mt-5">
       <div class="col-lg-4">
@@ -37,6 +38,7 @@
       </div>
     </div>
   </div>
+</section>
 </template>
 <script>
 import Auth from '../../Models/Auth';
@@ -66,7 +68,5 @@ export default {
 }
 </script>
 <style>
-body {
-  background: #d3e7ff !important;
-}
+
 </style>

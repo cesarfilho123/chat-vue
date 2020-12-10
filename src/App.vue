@@ -25,4 +25,10 @@ export default {
   color:#1378c1 !important;
   border-color:#1378c1 !important;
 }
+.section-center-bg{
+  background:#d5e9f1;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
 </style>

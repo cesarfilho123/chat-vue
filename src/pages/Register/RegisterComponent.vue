@@ -1,4 +1,5 @@
 <template>
+<section class="section-center-bg">
   <div class="container-fluid">
     <div class="row justify-content-center mt-5">
       <div class="col-lg-4">
@@ -31,7 +32,7 @@
                 </div>
                 <div class="d-flex justify-content-end">
                    <button class="btn btn-primary">
-                       Efetuar Login
+                       Criar Conta
                    </button>
                 </div>
             </form>
@@ -40,6 +41,7 @@
       </div>
     </div>
   </div>
+</section>
 </template>
 <script>
 import Auth from '../../Models/Auth';
@@ -64,7 +66,5 @@ export default {
 }
 </script>
 <style>
-body {
-  background: #d3e7ff !important;
-}
+
 </style>
