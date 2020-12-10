@@ -4,6 +4,7 @@ import VueRouter from 'vue-router';
 import Index from './pages/Index/IndexComponent';
 import LoginComponent from './pages/Login/LoginComponent';
 import RegisterComponent from './pages/Register/RegisterComponent';
+import ChatComponent from './pages/Chat/ChatComponent'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
@@ -13,7 +14,9 @@ Vue.use(VueRouter)
 const routers = [
   {path:'/',component: Index },
   {path:'/login',component: LoginComponent},
-  {path:'/register',component: RegisterComponent}
+  {path:'/register',component: RegisterComponent},
+  {path:'/chat',component: ChatComponent}
+
 
 ]
 
